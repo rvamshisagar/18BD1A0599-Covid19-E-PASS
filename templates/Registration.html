@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div id="1"><img src="../static/image.jpg" align="left" width="200px" height="100px"></div>
+        <div id="2"><h1 align="center">Registration form for COVID E-PASS</h1></div>
+    </div>
+    <div class="mid">
+    <form method="POST" action="/RegistrationDetails">
+        <table  align="center">
+            <tr><td><label for="fname">First Name:</label></td><td><input type="text" name="fname" id="fname" size="30"  pattern="[A-Za-z]{1,10}"></td></tr>
+            <tr><td><label for="lname">Last Name:</label></td><td><input type="text" id="lname" name="lname" size="30" pattern="[a-zA-Z]{1,10}"></td></tr>
+            <tr><td><label for="email">E-Mail ID:</label></td><td><input type="email" size="30" name="email" id="email"></td></tr>
+            <tr><td>Enter starting location:</td></tr>
+            <tr><td><label for="source_state">State:</label></td><td><input type="text" size="30" name="source_state" id="source_state"></td></tr>
+            <tr><td><label for="source">City:</label></td><td><input type="text"size="30" name="source" id="source"></td></tr>
+            <tr><td>Enter your Destination details:</td></tr>
+            <tr><td><label for="dest_state">State:</label></td><td><input type="text" size="30" name="dest_state" id="dest_state"></td></tr>
+            <tr><td><label for="destination">City:</label></td><td><input type="text" size="30" name="destination" id="destination"></td></tr>
+            <tr><td><label for="phonenumber">Phone Number(10-Digit):</label></td><td><input type="text" size="30" name="phonenumber" id="phonenumber" pattern="[6789][0-9]{9}"></td></tr>
+            <tr><td><label for="idcard">Aadhar Card Number(12-Digit):</label></td><td><input type="text" size="30" name="idcard" id="idcard" pattern="[0-9]{12}"></td></tr>
+            <tr><td><label for="date">Date:</label></td><td><input type="date" size="30" name="date" id="date"></td></tr>
+        </table>
+        <center>
+        <div class="footer" style="display:flex align-items:center justify-content:center width:100px">
+        <input type="checkbox" checked>I am responsible for any false information or mis use of the E-PASS.<br><br>
+        </div>
+        <input type="submit" class="button">
+        </center>
+    </form>
+    </div>
+</body>
+</html>
